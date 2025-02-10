@@ -5,7 +5,6 @@ const pokemonNumber = document.querySelector('.pokemon-number');
 const api = 'https://pokeapi.co/api/v2';
 
 async function getPokemonSpecies(pokemonId, info, gender) {
-    try {
         const response = await fetch(`${api}pokemon-species${pokemonId}`)
 
         if (info == 'egg_groups') {
@@ -25,5 +24,4 @@ async function getPokemonSpecies(pokemonId, info, gender) {
 
         }
        
-    }
 }
